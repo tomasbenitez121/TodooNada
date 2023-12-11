@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/scss/estilo.css">
+    <script src="assets/bootstrap-5.3.2/dist/js/bootstrap.bundle.js"></script>
+    <title>Datos</title>
+</head>
+<body>
+ 
+  <header>
+    <!-- NAV 1 -->
+    <nav class="nav1">
+        <div class="container-iconos container-fluid" style="display: flex;">
+
+          <a class="gmail" href="#">
+          <img  src="assets/img/carta1.png" width="42px" alt="">
+            todoonadatattooart2017@gmail.com
+          </a>
+          
+          <!-- Links RRSS -->
+          <div class="rrss">
+          <a class="facebook" href="#">
+          <img src="assets/img/f.png" width="12px" alt="">
+          </a>
+
+          <a class="ig" href="#">
+            <img src="assets/img/instagram.png" width="25px" alt="">
+          </a>
+        </div>
+      </div>
+      </nav>
+ 
+       
+       <!-- NAV 2 -->
+        
+      <div class="nav2">
+         <img class="logo" src="assets/img/logo.png" alt="" >
+        
+        <nav class="navegador">
+
+          <div class="buscar">
+            <input type="search" placeholder="Buscar">
+          </div>
+         
+          <ul class="productos">
+            <li><a href="producto.html.html" id="productos">Productos</a>
+
+            <ul class="hijos">
+              <li><a href="">Poleras</a></li>
+              <li><a href="">Polerones</a></li>
+              <li><a href="">Bandanas</a></li>
+            </li>
+            </ul>
+
+            <li><a href="carrito.html.html" id="carrito"><img src="assets/img/carro.png" alt="">
+              <li><a href="datos.html.html" id="datos"></a></li>
+            
+            </a></li>
+          </ul>
+        </nav>
+      </div>
+    
+</header>
+
+    <div  class="container my-3 bg-dark w-50 text-light p-3" >
+        <form class="row g-3 p-3">
+            <h2>Añade tus datos personales para el envío</h2>
+            <div class="col-md-4">
+                <label for="validationDefault01" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="validationDefault01"  required>
+              </div>
+              <div class="col-md-4">
+                <label for="validationDefault02" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="validationDefault02" required>
+              </div>
+              <div class="col-md-4">
+                <label for="validationDefaultUsername" class="form-label">Teléfono móvil</label>
+                <div class="input-group">
+                  <span class="input-group-text" id="inputGroupPrepend2">+56</span>
+                  <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+                </div>
+              </div>
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Clave</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Dirección </label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="Av. siempreviva 742">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Opcional</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Edificio, departamento o casa">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">Ciudad</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">Región</label>
+              <select id="inputState" class="form-select">
+                <option selected>Arica y Parinacota</option>
+                <option>Talca</option>
+                <option>Talca</option>
+                <option>Talca</option>
+                <option>Talca</option>
+                <option>Talca</option>
+                <option>Talca</option>
+              </select>
+            </div>
+            
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                
+                </label>
+              </div>
+            </div>
+           
+          </form>
+    </div>
+
+    <div class="pedido" id="pedido">
+      <h2>Tu pedido</h2>
+      <ul class="list-group list-group-horizontal">
+        <li class="list-group-item"><strong> Poductos</strong></li>
+        <li class="list-group-item" style="width: 16%;"><strong>Subtotal</strong></li>
+      </ul>
+      <ul class="list-group list-group-horizontal-sm">
+        <li class="producto list-group-item"> Bandana HEBI negra</li>
+        <li class="list-group-item" style="width: 16%;">$12.000</li>
+      </ul>
+      <ul class="list-group list-group-horizontal-md">
+        <li class="list-group-item"><strong>Subtotal</strong></li>
+        <li class="list-group-item" style="width: 16%;">$12.000</li>
+      </ul>
+      <ul class="list-group list-group-horizontal-lg">
+        <li class="list-group-item"><strong>Total</strong></li>
+        <li class="list-group-item" style="width: 16%;"><strong>$12.000</strong></li>
+      </ul>
+
+    </div>
+
+      <button type="button" class="confirmar btn btn-secondary btn-lg">Confirmar</button>
+      <button type="button" class="cancelar btn btn-secondary btn-lg">Cancelar</button>
+
+      <div class="terminos-condiciones container-fluid">
+        <img src="assets/img/webpay.png" alt="">
+        <hr>
+        <p>Tus datos personales se utilizarán para procesar tu pedido, mejorar tu experiencia en esta web 
+          y otros propósitos descritos en nuestra <strong> política de privacidad.</strong></p>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault" ></label>
+            <p> He leído y estoy de acuerdo con los <div class="terminos"> términos y condiciones </div> de la web </p>
+          </div>
+          <button type="button" class="aceptar btn btn-primary btn-lg">Realizar pedido</button>
+         
+      </div>
+    
+
+    <footer>
+      <div class="container">
+       
+        <div class="row">
+          <div class="log col-md-2 ">
+          
+              <img class="logfooter img-fluid" src="assets/img/logo.png" alt="">
+              <h3 class="todonada">Todo o Nada</h3>
+            
+          </div>
+            <!-- Sección Sitio -->
+         
+            <div class="foot col-md-2 my-4 d-flex flex-column align-items-start">
+                <h5>SITIO</h5>
+                <ul class="ticket list-unstyled text-start">
+                    <li><img src="assets/img/ticket.png" alt="">Todo o nada</li>
+                    <li><img src="assets/img/ticket.png" alt="">Venta de productos</li>
+                    <li><img src="assets/img/ticket.png" alt="">Envíos a todo chile</li>
+                </ul>
+            </div>
+
+            <!-- Sección Datos de contacto -->
+            <div class="foot col-md-2 my-4 d-flex flex-column ">
+                <h5>DATOS DE CONTACTO</h5>
+                <ul class="list-unstyled text-start">
+                    <li><img  src="assets/img/call.png" alt="">+56 944147539</li>
+                    <li><img  src="assets/img/mail.png " alt="">todonadatattooart2017</li>
+                    <li><img  src="assets/img/ubicacion.png" alt="">Palnta: callenose, Providencia, Santiago.</li>
+                  
+                </ul>
+            </div>
+            <!-- Sección Medios de pago -->
+            <div class="foot col-md-2 my-4 d-flex flex-column align-items-start">
+                <h5>MEDIO DE PAGO</h5>
+                <a class="webpay" href=""><img src="assets/img/webpay.png" alt=""></a>
+            </div>
+                    
+              <hr class="hr" size="4px">
+              <div class="footer2">
+              <p>2023 Todos los derechos reservados | Estudiantes DuocUC, Viña del Mar, Chile</p>
+            </div>
+    </footer>
+</body>
+</html>

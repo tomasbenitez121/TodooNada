@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/scss/estilo.css">
+   
+
+    <title>Carrito</title>
+</head>
+
+<body>
+ 
+    <header>
+        <!-- NAV 1 -->
+        <nav class="nav1">
+            <div class="container-iconos container-fluid" style="display: flex;">
+
+              <a class="gmail" href="#">
+              <img  src="assets/img/carta1.png" width="42px" alt="">
+                todoonadatattooart2017@gmail.com
+              </a>
+              
+              <!-- Links RRSS -->
+              <div class="rrss">
+              <a class="facebook" href="#">
+              <img src="assets/img/f.png" width="12px" alt="">
+              </a>
+
+              <a class="ig" href="#">
+                <img src="assets/img/instagram.png" width="25px" alt="">
+              </a>
+            </div>
+          </div>
+          </nav>
+     
+           
+           <!-- NAV 2 -->
+          
+          <div class="nav2">
+             <img class="logo" src="assets/img/logo.png" alt="" >
+            
+            <nav class="navegador">
+
+              <div class="buscar">
+                <input type="search" placeholder="Buscar">
+              </div>
+             
+              <ul class="productos">
+                <li><a href="../home.html.html">Productos</a>
+
+                <ul class="hijos">
+                  <li><a href="">Poleras</a></li>
+                  <li><a href="">Polerones</a></li>
+                  <li><a href="">Bandanas</a></li>
+                </li>
+                </ul>
+
+                <li><a href="/datos.html.html" id="carrito"><img src="assets/img/carro.png" alt=""></a></li>
+              </ul>
+            </nav>
+          </div>
+        
+    </header>
+     
+    <!-- Carrito -->
+
+    <nav class="tabla-compras" style="margin: 5%;">
+      <ul class="list-group list-group-horizontal">
+        <li class="list-group-item">Producto</li>
+        <li class="list-group-item" style="width: 86px;">Precio</li>
+        <li class="list-group-item">Cantidad</li>
+        <li class="list-group-item">Subtotal</li>
+        <li class="list-group-item">Total a pagar</li>
+      </ul>
+      <ul class="bandana list-group list-group-horizontal-sm">
+       
+        <li class="list-group-item " style="49px">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+          </label>
+          <img class="bandana-img" src="assets/img/bandana2.jpg" alt=" width:  3%;margin-left: 4%;" style="width: 32px; margin: 3%; margin-left: 5%;"> Bandana HEBI negra</li>
+        <li class="list-group-item" style="82px">$12.000</li>
+        <li class="sumatoria list-group-item" style="93px">
+          <div class="resta">-</div>
+          <div class="cantidad" style="width: 10px;">1</div>
+          <div class="suma">+</div>
+        </li>
+        <li class="list-group-item" style=" 92px ">$12.000</li>
+        <li class="list-group-item" style="width: 126px;">$12.000</li>
+      </ul>
+    </nav>
+
+    <div class="finalizar-compra">
+     <a class="compra" href="../carro/datos.html.html"><button type="button" class=" btn btn-secondary">Finalizar compra</button></a>
+    </div>
+   
+
+    <div class="volver-tienda">
+      <a href="../home/index.html"><button type="button" class="volver btn btn-secondary">Volver a la tienda</button></a>
+    </div>
+
+  
+   
+   <!-- FOOTER -->
+    <footer>
+      <div class="container">
+       
+        <div class="row">
+          <div class="log col-md-2 ">
+          
+              <img class="logfooter img-fluid" src="assets/img/logo.png" alt="">
+              <h3 class="todonada">Todo o Nada</h3>
+            
+          </div>
+            <!-- Sección Sitio -->
+         
+            <div class="foot col-md-2 my-4 d-flex flex-column align-items-start">
+                <h5>SITIO</h5>
+                <ul class="ticket list-unstyled text-start">
+                    <li><img src="assets/img/ticket.png" alt="">Todo o nada</li>
+                    <li><img src="assets/img/ticket.png" alt="">Venta de productos</li>
+                    <li><img src="assets/img/ticket.png" alt="">Envíos a todo chile</li>
+                </ul>
+            </div>
+
+            <!-- Sección Datos de contacto -->
+            <div class="foot col-md-2 my-4 d-flex flex-column ">
+                <h5>DATOS DE CONTACTO</h5>
+                <ul class="list-unstyled text-start">
+                    <li><img  src="assets/img/call.png" alt="">+56 944147539</li>
+                    <li><img  src="assets/img/mail.png " alt="">todonadatattooart2017</li>
+                    <li><img  src="assets/img/ubicacion.png" alt="">Palnta: callenose, Providencia, Santiago.</li>
+                  
+                </ul>
+            </div>
+            <!-- Sección Medios de pago -->
+            <div class="foot col-md-2 my-4 d-flex flex-column align-items-start">
+                <h5>MEDIO DE PAGO</h5>
+                <a class="webpay" href=""><img src="assets/img/webpay.png" alt=""></a>
+            </div>
+                    
+              <hr class="hr" size="4px">
+              <div class="footer2">
+              <p>2023 Todos los derechos reservados | Estudiantes DuocUC, Viña del Mar, Chile</p>
+            </div>
+           
+        <script src="assets/bootstrap-5.3.2/dist/js/bootstrap.bundle.js"></script>
+        
+      
+    </footer>
+</body>
+</html>

@@ -1,0 +1,380 @@
+@import '../bootstrap-5.3.2/scss/bootstrap.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark&family=Palanquin:wght@300&family=Playfair+Display&display=swap');
+
+@import 'variables';
+
+/**/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Palanquin;
+}
+   
+/* NAVEGADOR 1 */
+header .nav1{
+   background-color: $color-negro;
+   height: 66px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+header .gmail {
+    color: $color-verde-agua;
+    text-decoration: none;
+
+}
+
+.container-iconos { 
+    display: flex;
+    justify-content: space-around;
+    padding-right: 23%;
+}
+
+.rrss {
+   display: contents;
+}
+
+.facebook {
+    margin-left: 24%;
+    margin-right: 14%;
+}
+
+/* NAVEGADOR 2 */
+header .nav2{
+    display: flex;
+   max-width: 100%;
+   padding: 1%;
+   padding-bottom: 0px;
+   margin: auto;
+   background-color: $color-amarillo;
+}
+
+.logo{
+    width: 80px;
+    margin-left: 3%;
+    padding-bottom: 1%;
+}
+
+.buscar{ 
+border-radius: 3px;
+border: 0;
+}
+
+
+.nav2 .productos {
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.navegador{
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: relative;
+width: 37%;
+left: 26%;
+
+
+}
+
+.navegador ul{
+    list-style: none;
+    padding: 0 10px;
+}
+
+.navegador ul li {
+    display: inline-block;
+    position: relative;
+    transition: .3s linear;
+    z-index: 1000;
+}
+
+.navegador ul li:hover {
+    transform: scale(1.1);
+}
+
+.navegador ul li a {
+    color: $color-blanco;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 12px 29px;
+    transition: .3s linear;
+}
+
+.navegador ul li a:hover{
+    color: $color-verde-agua;
+    transform: scale(1.1);
+    background: $color-negro;
+}
+
+.navegador ul li:hover .hijos{
+    display: block;
+}
+
+.navegador .hijos{
+    display: none;
+    background: #222322;
+    position: absolute;
+    width: 150px;
+    align-items: center;
+}
+
+.navegador .hijos li{
+    display: block;
+    overflow: hidden;
+    border-bottom: none;
+}
+
+.navegador .hijos li a {
+    display: block;
+    
+}
+
+/* Body-Carrito */
+
+.tabla-compras{
+    width: 100%;
+    margin: 10%;
+
+}
+
+.pagination .pagination-lg {
+    width: 40px;
+}
+
+.sumatoria {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-weight: bold;
+    margin: 1px 1px;
+}
+
+.resta{
+    border: solid 1px;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+   
+}
+
+.suma{
+    justify-content: center;
+    text-align: center;
+    border: solid 1px;
+    width: 24px;
+    height: 24px;
+    margin-left: 1px;
+}
+
+.finalizar-compra {
+    display: flex;
+   flex-direction: row-reverse;
+}
+
+.finalizar-compra .compra {
+font-weight: bold;
+margin-right: 25%;
+}
+
+.compra:hover {
+background-color: $color-verde-agua;
+transition: 0.5s;
+
+}
+
+.volver-tienda {
+    display: flex;
+    justify-content: center;
+}
+
+.volver-tienda .volver {
+    font-weight: bold;
+}
+.volver:hover {
+    background-color: $color-verde-agua;
+    transition: 0.5s;
+}
+
+
+/* FOOTER */
+
+footer{
+   
+    background-color: $color-amarillo;
+    color: $color-gris; 
+    padding: 30px; 
+    display: flex;
+    align-items: center; 
+    margin-top: 15%;
+  
+}
+
+footer .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+footer .logofooter{
+    width: 250px;
+    height: auto;
+    margin-left: 3%;
+    
+}
+
+footer .foot{
+    padding-top: 2%;
+}
+
+footer .log .todonada{
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 10%;
+    margin-bottom: 50px;
+}
+
+.hr {
+    background-color: $color-gris;
+    height: 3px;
+    width: 78%;
+    margin-left: 17%;
+   }
+.footer2 {
+display: flex;
+position: relative;
+left: 5%;
+justify-content: center;
+color: $color-blanco;
+font-weight: bold;
+margin-top: 1%;
+   
+}
+
+/* Pagina confirmar pedido */
+
+.p-3 {
+    border-radius: 10px;
+}
+
+.pedido {
+    font-size: 25px;
+    border-radius: 0%;
+    margin-bottom: 5%;
+    margin-left: 25%;
+    margin-top: 3%;
+}
+.pedido h2 {
+    margin-bottom: 2%;
+}
+
+.list-group-item:first-child{
+    width: 50%;
+    color: $color-gris;
+    
+}
+.pedido .producto:nth-of-type(odd) {
+    background-color: rgb(205, 203, 203);
+}
+
+@media (max-width: 575.98px) {
+.pedido .list-group {
+border: 0px;
+}
+
+.pedido .list-group {
+    font-size: 22px;
+}
+    
+}
+
+.confirmar{
+position: relative;
+left: 38%;
+font-weight: bold;
+background-color: $color-blanco;
+color: $color-gris;
+}
+
+.confirmar:hover {
+    background-color: $color-verde-agua;
+    color: $color-blanco;
+}
+.cancelar {
+    position: relative;
+    left: 40%;
+    font-weight: bold;
+    background-color: $color-blanco;
+    color: $color-gris
+}
+
+.cancelar:hover {
+    background-color: $color-verde-agua;
+    color: $color-blanco;
+}
+
+/* TERMINOS Y CONDICIONES */
+
+.terminos-condiciones {
+    background-color: #f5f0f0;
+    margin-top: 5%;
+    width: 60%;
+    height: 345px;
+    padding: 1%;
+    font-size: 22px;
+}
+
+.form-check{
+    display: flex;
+}
+
+.terminos {
+    color: $color-amarillo;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.aceptar {
+    background-color: $color-gris;
+    color: $color-blanco;
+    font-weight: bold;
+    position: relative;
+    left: 70%;
+}
+
+.aceptar:hover {
+    background-color: $color-verde-agua;
+}
+
+@media (max-width: 600px) {
+.terminos-condiciones {
+    border: 0px;
+    font-size: 15px;
+    height: 413px;
+
+    }
+.p {
+    width: 40%;
+}
+.aceptar {
+    display: block;
+    font-size: 15px;
+    margin-top: 14%;
+    position: absolute;
+    margin-left: -27%;
+   
+}    
+ }
+
+
+
+
